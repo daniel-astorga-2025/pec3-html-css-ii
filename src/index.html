@@ -5,45 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Artesanos del Ebro</title>
   </head>
-  <body>
- <include src="./views/header.html"></include>
 
-  <main>
-    <include src="./views/hero.html"></include>
+  <body class="bg-stone-50 text-slate-900">
+    <include src="views/header.html"></include>
 
-    <section class="section-container">
-      <include src="./views/section-title.html"></include>
+    <main>
+      <include src="views/home-poster.html"></include>
+    </main>
 
-      <div class="grid gap-6 md:grid-cols-3">
-        <article class="rounded-2xl bg-white p-6 shadow-md">
-          <h3 class="mb-3 text-xl font-bold text-secondary">Diseño responsive</h3>
-          <p class="text-slate-600">
-            Adaptación del contenido a diferentes dispositivos mediante utilidades responsive de Tailwind.
-          </p>
-        </article>
-
-        <article class="rounded-2xl bg-white p-6 shadow-md">
-          <h3 class="mb-3 text-xl font-bold text-secondary">Atomic CSS</h3>
-          <p class="text-slate-600">
-            Uso de clases de utilidad para construir interfaces directamente desde el HTML.
-          </p>
-        </article>
-
-        <article class="rounded-2xl bg-white p-6 shadow-md">
-          <h3 class="mb-3 text-xl font-bold text-secondary">Componentes</h3>
-          <p class="text-slate-600">
-            Separación de bloques reutilizables mediante posthtml-include.
-          </p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-<include src="./views/footer.html"></include>
+    <include src="views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
   </body>
 </html>

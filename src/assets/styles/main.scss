@@ -1,41 +1,27 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
-
- /**
- * Import dependencies
- */
 @use "dependencies";
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-@use "layouts/home";
-
-/**
- * Do NOT include anything else in this file!
- */
-
- 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .btn-primary {
-    @apply inline-block rounded-lg bg-blue-700 px-6 py-3 text-white font-semibold hover:bg-blue-800 transition;
+    @apply inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 font-semibold text-secondary transition hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
   }
 
-  .section-title {
-    @apply text-3xl md:text-4xl font-bold text-slate-900 mb-6;
+  .section-container {
+    @apply mx-auto max-w-6xl px-6 py-16 md:py-24;
   }
 
-  .card-base {
-    @apply rounded-xl bg-white shadow-md p-6;
+  .card {
+    @apply rounded-3xl bg-white p-6 shadow-lg md:p-8;
+  }
+
+  .form-label {
+    @apply mb-2 block font-semibold text-secondary;
+  }
+
+  .form-field {
+    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/30;
   }
 }
- 
-

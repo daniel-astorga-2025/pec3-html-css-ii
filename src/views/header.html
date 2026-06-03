@@ -1,34 +1,31 @@
-<header class="bg-secondary text-white shadow-md">
+<header class="sticky top-0 z-50 bg-secondary/95 text-white shadow-md backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-
-    <a href="index.html" class="text-xl font-bold">
-      WebConference
+    <a href="index.html" class="text-lg font-bold tracking-wide md:text-xl">
+      Artesanos del Ebro
     </a>
 
-    <nav>
-      <ul class="hidden gap-6 md:flex">
+    <nav aria-label="Navegación principal">
+      <ul class="hidden items-center gap-8 md:flex">
         <li>
-          <a href="index.html" class="hover:text-accent transition">
+          <a href="index.html" class="text-sm font-medium transition hover:text-accent">
             Inicio
           </a>
         </li>
 
         <li>
-          <a href="contact.html" class="hover:text-accent transition">
+          <a href="contact.html" class="text-sm font-medium transition hover:text-accent">
             Contacto
           </a>
         </li>
       </ul>
 
-      <!-- Hamburguesa sólo visual -->
       <button
-        class="md:hidden"
+        class="inline-flex rounded-md p-2 text-2xl transition hover:text-accent md:hidden"
+        type="button"
         aria-label="Abrir menú"
       >
         ☰
       </button>
-
     </nav>
-
   </div>
 </header>

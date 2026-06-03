@@ -5,36 +5,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Contacto | Artesanos del Ebro</title>
   </head>
-  <body>
 
-<include src="./views/header.html"></include>
+  <body class="bg-stone-50 text-slate-900">
+    <include src="views/header.html"></include>
 
-<main class="bg-slate-100">
-  <section class="section-container">
-    <div class="mb-10 text-center">
-      <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">
-        Contacto
-      </p>
+    <main>
+      <section class="bg-secondary px-6 py-20 text-center text-white">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+          Participa en las jornadas
+        </p>
 
-      <h1 class="section-title">
-        Contacta con nosotros
-      </h1>
+        <h1 class="mx-auto max-w-4xl text-4xl font-bold md:text-6xl">
+          Contacto e inscripciones
+        </h1>
 
-      <p class="mx-auto max-w-2xl text-slate-600">
-        Formulario de contacto creado con Netlify Forms y estilizado con utilidades de Tailwind CSS.
-      </p>
-    </div>
+        <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
+          Escríbenos si quieres asistir, colaborar como tallerista o recibir más información
+          sobre las jornadas Artesanos del Ebro.
+        </p>
+      </section>
 
-    <include src="./views/contact-form.html"></include>
-  </section>
-</main>
+      <section class="section-container grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+        <include src="views/contact-info.html"></include>
+        <include src="views/contact-form.html"></include>
+      </section>
+    </main>
 
-<include src="./views/footer.html"></include>
+    <include src="views/footer.html"></include>
 
-   <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
