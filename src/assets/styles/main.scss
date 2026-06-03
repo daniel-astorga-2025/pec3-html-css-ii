@@ -3,7 +3,7 @@
  * Do not include SCSS code in this file.
  */
 
-/**
+ /**
  * Import dependencies
  */
 @use "dependencies";
@@ -18,3 +18,24 @@
 /**
  * Do NOT include anything else in this file!
  */
+
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply inline-block rounded-lg bg-blue-700 px-6 py-3 text-white font-semibold hover:bg-blue-800 transition;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-slate-900 mb-6;
+  }
+
+  .card-base {
+    @apply rounded-xl bg-white shadow-md p-6;
+  }
+}
+ 
+

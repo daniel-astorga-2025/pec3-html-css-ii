@@ -1,0 +1,53 @@
+<form 
+  name="contact" 
+  method="POST" 
+  data-netlify="true"
+  class="mx-auto max-w-2xl rounded-2xl bg-white p-6 shadow-lg md:p-8"
+>
+  <input type="hidden" name="form-name" value="contact">
+
+  <div class="grid gap-6">
+    <div>
+      <label for="name" class="mb-2 block font-semibold text-slate-800">
+        Nombre
+      </label>
+      <input 
+        id="name" 
+        name="name" 
+        type="text" 
+        required
+        class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+      >
+    </div>
+
+    <div>
+      <label for="email" class="mb-2 block font-semibold text-slate-800">
+        Email
+      </label>
+      <input 
+        id="email" 
+        name="email" 
+        type="email" 
+        required
+        class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+      >
+    </div>
+
+    <div>
+      <label for="message" class="mb-2 block font-semibold text-slate-800">
+        Mensaje
+      </label>
+      <textarea 
+        id="message" 
+        name="message" 
+        rows="5" 
+        required
+        class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">
+      Enviar mensaje
+    </button>
+  </div>
+</form>

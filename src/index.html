@@ -9,27 +9,40 @@
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
+ <include src="./views/header.html"></include>
+
+  <main>
+    <include src="./views/hero.html"></include>
+
+    <section class="section-container">
+      <include src="./views/section-title.html"></include>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="rounded-2xl bg-white p-6 shadow-md">
+          <h3 class="mb-3 text-xl font-bold text-secondary">Diseño responsive</h3>
+          <p class="text-slate-600">
+            Adaptación del contenido a diferentes dispositivos mediante utilidades responsive de Tailwind.
+          </p>
+        </article>
+
+        <article class="rounded-2xl bg-white p-6 shadow-md">
+          <h3 class="mb-3 text-xl font-bold text-secondary">Atomic CSS</h3>
+          <p class="text-slate-600">
+            Uso de clases de utilidad para construir interfaces directamente desde el HTML.
+          </p>
+        </article>
+
+        <article class="rounded-2xl bg-white p-6 shadow-md">
+          <h3 class="mb-3 text-xl font-bold text-secondary">Componentes</h3>
+          <p class="text-slate-600">
+            Separación de bloques reutilizables mediante posthtml-include.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+<include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
   </body>
